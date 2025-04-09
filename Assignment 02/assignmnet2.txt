@@ -1,0 +1,58 @@
+1. List the Operators in Java
+Ans => Java provides various types of operators that allow you to perform different kinds of operations 
+        on variables and values. These include Arithmetic Operators +, -, *, /, %, Relational Operators ==, !=, <, >, <=, >=,
+        Logical Operators &&, ||, !, Bitwise Operators &, |, ^, ~, <<, >>, >>>, Assignment Operators =, +=, -=, *=, /=, etc., 
+        Unary Operators +, -, ++, --, !, Ternary Operator ?:, and Instanceof Operator.  
+
+
+
+2. Explain about Increment and Decrement operators and give examples
+Ans => The increment operator ++ increases a variable’s value by 1, while the decrement operator -- decreases 
+        it by 1. They come in two forms: prefix ++a, --a and postfix a++, a--. Prefix changes the value before use, 
+        and postfix changes it after.
+
+
+
+3. What are the Conditional Operators in Java?
+Ans => Conditional operators, also known as ternary operators, are used to assign a value based on a condition. It uses the 
+        condition ? value_if_true : value_if_false, eg. String status = (a == b) ? "equal" : "not equal"; 
+
+
+
+4. What are the types of operators based on the number of operands?
+Ans => Operators in Java can be classified based on the number of operands:
+        => Unary Operators (one operand): e.g., ++a, --b, !flag.
+        => Binary Operators (two operands): e.g., a + b, x > y.
+        => Ternary Operator (three operands): e.g., condition ? a : b.
+
+
+5. What are the conditional statements and use of conditional statements in Java?
+Ans => Conditional statements allow you to control the flow of your program based on conditions. Java supports if, if else, if else if, 
+        and switch statements. These are used to make decisions based on boolean expressions.
+
+
+6. What is the syntax of if-else statement?
+Ans => The if-else statement evaluates a condition: if it’s true, the if block executes; otherwise, 
+        the else block executes. The syntax is: in question6.java
+
+
+7. What are the 3 types of iterative statements in Java?
+Ans => Java supports three primary looping constructs:
+        for loop – used when the number of iterations is known.
+        while loop – used when the number of iterations is unknown and depends on a condition.
+        do-while loop – like while, but executes the loop body at least once.
+
+
+8. What do you mean by an Array?
+Ans => An array is a data structure in Java that stores multiple values of the same type in a single variable. 
+        Arrays are indexed, starting from 0, and have a fixed size once declared.
+
+
+9. => present in question9.java file
+
+
+
+10. State the difference between StringBuffer and StringBuilder in Java
+Ans => Both StringBuffer and StringBuilder are used to create mutable (modifiable) strings in Java. The key difference is 
+        that StringBuffer is thread-safe (synchronized), while StringBuilder is not, making StringBuilder faster in single-threaded 
+        environments. Use StringBuffer when working with multi-threaded programs.
