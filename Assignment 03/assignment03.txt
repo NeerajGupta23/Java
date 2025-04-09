@@ -1,0 +1,67 @@
+1. What is the difference between JVM, JRE and JDK?
+Ans => The JVM (Java Virtual Machine) is an abstract machine that runs Java bytecode. It enables Java programs to be 
+        platform-independent by executing the compiled .class files. JRE (Java Runtime Environment) is a package that 
+        provides the libraries, JVM, and other components to run Java applications, but it does not include development 
+        tools like compilers. JDK (Java Development Kit), on the other hand, includes everything in the JRE along with 
+        development tools such as the Java compiler (javac) and debugger, allowing users to develop and compile 
+        Java applications.
+
+
+
+2. How is Java programming language machine and platform independent?
+Ans => Java is machine-independent because it does not compile code directly into machine code. Instead, Java source code 
+        is compiled into bytecode by the Java compiler, which is not specific to any hardware platform. Java is platform-independent 
+        because the bytecode can be executed on any machine that has a JVM installed. This "Write Once, Run Anywhere" capability 
+        is made possible by the JVM which translates bytecode into native machine code at runtime.
+
+
+
+3. Explain how Java programs are executed by the JVM?
+Ans => When a Java program is compiled, the javac compiler translates the source code into bytecode (.class file). This bytecode 
+        is passed to the JVM, which loads it using the ClassLoader, verifies it for security using the Bytecode Verifier, and then 
+        either interprets or compiles it using the Just-In-Time (JIT) compiler into native machine code. Finally, the Runtime environment 
+        of the JVM executes the code with the help of memory management and garbage collection.
+
+
+
+4. What is the use of var args?
+Ans => In Java, varargs (variable-length arguments) allow you to pass a variable number of arguments to a method. It simplifies 
+        method definitions when the number of parameters is not fixed. Internally, Java treats varargs as arrays. You can define a 
+        method with varargs using the syntax datatype... parameterName.
+
+
+
+5. What are the types of variables in Java?
+Ans => Java supports three main types of variables:
+        -> Local Variables: Declared inside methods or blocks and accessible only within them.
+        -> Instance Variables: Non-static variables defined in a class but outside any method, accessible through object instances.
+        -> Static Variables: Declared with the static keyword and shared among all objects of the class.
+
+
+
+6. How many types of memory areas are allocated by JVM?
+Ans => JVM divides memory into three main areas for efficient execution:
+        -> Heap: Stores objects and instance variables.
+        -> Stack: Stores method calls and local variables.
+        -> Method Area: Stores class-level data such as static variables and method definitions.
+
+
+
+7. What is Just-in-time Compiler (JIT)?
+Ans => The Just-In-Time (JIT) Compiler is a part of the JVM that improves performance. When a method is called frequently, the JIT compiler 
+        compiles the bytecode of that method into native machine code so that it doesn't need to be interpreted repeatedly. This reduces execution 
+        time significantly. The JIT compiler operates at runtime and optimizes performance-critical parts of the code.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
