@@ -1,0 +1,80 @@
+1. What are Primitive Data Types in Java?
+Answer => Java provides eight primitive data types that are the most basic forms of data. These are not 
+        objects and are used to store simple values. The types include byte, short, int, and long for 
+        integer values; float and double for decimal values; char for single characters; and boolean for 
+        true/false values. These types help in efficient memory usage and are the foundation of variable 
+        declarations in Java.
+
+
+
+2. What are Identifiers in Java?
+Answer => Identifiers are the names used to identify various elements like classes, methods, 
+        variables, and labels in Java. They must begin with a letter (A–Z or a–z), an underscore _, or 
+        a dollar sign $, and they cannot begin with a digit or be a reserved keyword. Java is case-sensitive,
+        so identifiers like Sum and sum would be treated differently. Proper naming of identifiers improves 
+        code readability and maintainability.
+
+
+
+3. What is final class in Java?
+Answer => A final class in Java is a class that cannot be inherited or extended by any other class. 
+        When a class is declared using the final keyword, it means that the class's functionality is complete 
+        and should not be modified through inheritance. This is commonly used in security-sensitive classes or
+        utility classes like java.lang.String, which is final to avoid unexpected behavior through subclassing.
+
+
+
+4. What are the two ways to make a class final?
+Answer => The most direct way to make a class final is by using the final keyword in the class declaration.
+        This prevents the class from being subclassed. Another approach, though less common, is to declare 
+        all the methods of the class as final and ensure that no subclass can override them. However, to completely 
+        prevent inheritance, using the final keyword on the class itself is the recommended and effective way.
+
+
+
+5. Can we create an instance of final class in another class?
+Answer => Yes, we can create an instance of a final class in another class. Declaring a class as final 
+        only means that it cannot be extended—it does not restrict its instantiation. Objects of a final class can
+        be created and used like any other class. The limitation only applies to inheritance, not object creation or 
+        usage.
+
+
+
+6. What is Volatile keyword used for?
+Answer => The volatile keyword in Java is used to indicate that a variable may be changed unexpectedly, 
+        especially in multithreaded environments. It ensures that every read of a volatile variable reflects the 
+        most recent write by any thread. Without volatile, threads might cache variables locally and not reflect 
+        the updated value from main memory, leading to inconsistent behavior.
+
+
+
+7. What is the use of Transient Keyword?
+Answer => The transient keyword in Java is used to indicate that a field should not be serialized. During
+        serialization, if an object contains transient variables, those variables are not included in the serialized 
+        representation of the object. This is useful for sensitive data like passwords or temporary data that should
+        not be persisted when an object is stored or transferred.
+
+
+
+8. What are the types of casting?
+Answer => Casting in Java is of two types: implicit (widening) and explicit (narrowing). Implicit casting 
+        happens automatically when converting a smaller type to a larger type, such as int to long or float to double.
+        Explicit casting is needed when converting from a larger type to a smaller type, such as double to int, 
+        and must be done manually using cast syntax to avoid data loss or precision errors.
+
+
+
+9. What is boxing and unboxing?
+Answer => Boxing is the process of converting a primitive data type into its corresponding wrapper class 
+        object—for example, converting an int to an Integer. Unboxing is the reverse process where the object of 
+        a wrapper class is converted back to a primitive type. Java provides automatic support for boxing and unboxing,
+        which is particularly useful when working with collections that store objects.
+
+
+
+10. What is the difference between keywords, identifiers and literals in Java?
+Answer => In Java, keywords are reserved words that have a specific meaning in the language syntax 
+        (like class, int, if, final) and cannot be used as identifiers. Identifiers are user-defined names given 
+        to classes, variables, methods, etc., which help in referencing program elements. Literals, on the other 
+        hand, are constant values written directly in the code, such as numbers (100), characters ('A'), and boolean
+        values (true, false). These three concepts form the basic building blocks of writing Java programs.
